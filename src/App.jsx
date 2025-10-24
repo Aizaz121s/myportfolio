@@ -8,6 +8,7 @@ import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
-
+      <Analytics />
     </div>
   );
 };
