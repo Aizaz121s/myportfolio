@@ -16,6 +16,7 @@ import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 import firebaseLogo from './assets/tech_logo/firebase.png';
+
 //import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
 //import javaLogo from './assets/tech_logo/java.png';
@@ -34,21 +35,22 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 
 // Experience Section Logo's
 import nielogo from './assets/company_logo/nielogo.jfif';
-
+import induslogo from './assets/company_logo/induslogo.jfif'
 // Education Section Logo's
 import questlogo from './assets/education_logo/questlogo.jpg';
 import islamialogo from './assets/education_logo/islamialogo.jpeg';
 import ibalogo from './assets/education_logo/ibalogo.png';
 
 // Project Section Logo's
- import aiproject from './assets/work_logo/codereview.PNG';
- import voting from './assets/work_logo/voting.png';
- import urlshortner from './assets/work_logo/urlshortner.PNG';
- import trackor from './assets/work_logo/realtimetrackorapp.PNG';
- import reacttodo from './assets/work_logo/todo.PNG';
- import event from './assets/work_logo/event.png';
- import sensor from './assets/work_logo/sensor.png';
- import amazonclone from './assets/work_logo/amazonclone.png';
+import aiproject from './assets/work_logo/codereview.PNG';
+import voting from './assets/work_logo/voting.png';
+import urlshortner from './assets/work_logo/urlshortner.PNG';
+import trackor from './assets/work_logo/realtimetrackorapp.PNG';
+import reacttodo from './assets/work_logo/todo.PNG';
+import event from './assets/work_logo/event.png';
+import sensor from './assets/work_logo/sensor.png';
+import amazonclone from './assets/work_logo/amazonclone.png';
+import chatapp from './assets/work_logo/chatapp.jpg';
 
 
 
@@ -111,10 +113,32 @@ export const SkillsInfo = [
   export const experiences = [
     {
       id: 0,
+      img: induslogo,
+      role: "Full Stack Developer",
+      company: "Indus Technology Corporation",
+      date: "Feb 2024 - Present",
+      desc: "Engineer and deploy full-stack web applications using Next.js (frontend) and Node.js/Express (backend), serving live clients across 3 active projects simultaneously,Design and implement RESTful APIs with AWS Lambda and API Gateway, reducing server provisioning overheadby leveraging a fully serverless backend architecture, Build responsive, pixel-perfect UIs with Next.js 14 and Tailwind CSS, collaborating directly with designers and project managers in an Agile sprint environment Configure and manage AWS DynamoDB schemas for structured data storage, optimizing query patterns to maintain consistent API response performance.",
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React JS",
+        "TypeScript",
+        "Node JS",
+        "Tailwind CSS",
+        "MongoDb",
+        "Redux",
+        " Next Js",
+        "AWS Services",
+        "Team Collaborations",
+      ],
+    },
+    {
+      id: 1,
       img: nielogo,
       role: "Backend Developer",
       company: "National Institude Of Electronics, Islamabad",
-      date: "Jun 2024 - Jul 2024",
+      date: "Jun 2024 - Sep 2024",
       desc: "Developed a backend system in JavaScript to receive sensor data via serial port, process and transform the data according to sensor readings for internal monitoring tools. Improved understanding of handling hardware data streams with backend integration and real-time data processing.",
       skills: [
         "HTML",
@@ -129,6 +153,7 @@ export const SkillsInfo = [
         " Next Js",
       ],
     },
+    
     
   ];
   
@@ -164,7 +189,30 @@ export const SkillsInfo = [
   
   export const projects = [
     {
-      id: 0,
+  id: 0,
+  title: "Real-Time Chat Application",
+  description:
+    "A full-stack real-time chat application built with the MERN stack that enables seamless one-to-one messaging with instant communication features. The platform includes secure JWT authentication, online/offline user status tracking, real-time messaging using Socket.IO, image sharing, responsive modern UI, and cloud-based media storage integration. It is designed to deliver a fast, scalable, and user-friendly chatting experience similar to modern messaging platforms.",
+  image:chatapp,
+  tags: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React JS",
+    "MERN",
+    "Node.js",
+    "MongoDB",
+    "Express.js",
+    "Socket.IO",
+    "JWT",
+    "Tailwind CSS",
+    "API"
+  ],
+  github: "https://github.com/Aizaz121s/Chat_App",
+  webapp: "",
+},
+    {
+      id: 1,
       title: "AI Code Reviewer (MERN Stack)",
       description:
         "A full-stack application built with MongoDB, Express, React, and Node.js that automates the code review process. It integrates a powerful AI model to instantly scan code, detect bugs, flag security issues, and automatically generate JSDoc documentation and suggested fixes, dramatically improving code quality and development efficiency.",
@@ -174,7 +222,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 1,
+      id: 2,
       title: " Decentralized Voting System (Blockchain, Node.js,MongoDB)",
       description:
         "Final Year Project developing a decentralized voting system using blockchain technology, where Idesigned and implemented the backend server using Node.js with MongoDB integration for handling secure votetransactions, user authentication, and blockchain data management.",
@@ -184,7 +232,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 2,
+      id: 3,
       title: "URL Shortener (Node.js, MongoDB)",
       description:
         "Developed a backend service to shorten URLs with unique codes, redirection logic, and tracking using Node.js, Express.js, and MongoDB.",
@@ -194,7 +242,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 3,
+      id: 4,
       title: "Real Time Tracker App (Node.js, Express.js ,MongoDB, Socket.io)",
       description:
         "Developed a real-time tracker app using Node.js, Express, MongoDB, and Socket.io, enabling live data synchronization and updates. Implemented scalable APIs, real-time communication, and secure data handling for multiple users.",
@@ -204,7 +252,7 @@ export const SkillsInfo = [
       webapp: "https://real-time-tracker-app-production.up.railway.app/",
     },
     {
-      id: 4,
+      id: 5,
       title: "React Todo List (React, Tailwind CSS):",
       description:
         "Developed a todo list application with React and Tailwind CSS, utilizing localstorage for data persistence. Implemented reusable components, state management, and a responsive UI to manage tasks effectively.",
@@ -214,7 +262,7 @@ export const SkillsInfo = [
       webapp: "https://aizaz121s.github.io/Todo-List/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Event Registration Form (Node.js, MongoDB)",
       description:
         "Created a backend for event registration, handling user input validation, data storage using MongoDB, and confirmation responses with Node.js and Express.js",
@@ -224,7 +272,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 6,
+      id: 7,
       title: " Sensor Data Processing System (JavaScript)",
       description:
         "Designed and implemented a system to receive data from sensors via serial port, process and transform the data according to sensor values, enabling real-time monitoring and structured storage for analysis",
@@ -234,7 +282,7 @@ export const SkillsInfo = [
       webapp: "",
     },
     {
-      id: 7,
+      id: 8,
       title: "Amazon Clone (HTML, CSS)",
       description:
         "This project is a static, pixel-perfect replication of the core visual design and layout of the Amazon e-commerce platform. Built exclusively with HTML5 and CSS3, the project demonstrates proficiency in structuring complex web layouts and executing high-fidelity styling without reliance on backend logic or advanced JavaScript frameworks.",
